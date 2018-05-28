@@ -1,0 +1,418 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(fonts/Quicksand-Bold.otf);
+}
+
+@font-face {
+    font-family: Montserrat Regular;
+    src: url(fonts/montserrat.regular.ttf);
+}
+
+html, body{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+
+header{
+    font-family: Montserrat Regular;
+    background-color: #373C3F;
+    height: 97px;
+}
+
+.navigation{
+    display: none;
+    height: 100%;
+}
+
+.navigation p{
+    margin: 0;
+    padding: 3%;
+    color: white;
+    font-size: 18pt;
+}
+
+.nav_image{
+    width: 11%;
+    background-image: url('image/menu.jpg');
+    background-size: cover;
+}
+
+nav{
+    margin-left: 5%;
+}
+
+li{
+    display:inline;
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    padding-top: 44px;
+    margin :0;
+}
+
+.topSection{
+    background-color: #16b0c3;
+    font-family: Montserrat Regular;
+    height: 577px;
+    margin: 0;
+    display: flex;
+}
+
+.topSection h1{
+    font-size: 45pt;
+    color: white;
+    margin: 0;
+    font-weight: normal;
+}
+
+.topSection .container{
+    width: 700px;
+    margin:auto;
+}
+
+.topSection p{
+    padding-top: 20px;
+    margin: 0;
+    color: #74d4de;
+    font-size: 25pt;
+}
+
+.siteLink p{
+    float:left;
+}
+.siteLink .sign{
+    float: right;
+    font-family: Quicksand;
+}
+
+.top_section a{
+    color: white;
+    font-weight: normal;
+}
+
+.middleSection{
+    font-family: Montserrat Regular;
+    height: 244px;
+    font-size: 25pt;
+}
+
+.middleSection .leftMiddle{
+    float: left;
+    background-color: #27212c;
+    width: 77.5%;
+    height: 244px;
+    display: flex;
+    color: #9484a3;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+}
+
+.middleSection .rightMiddle{
+    float: right;
+    width: 22.5%;
+    background-color: #bc3183;
+    height: 244px;
+    display: flex;
+    font-family: Quicksand;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+}
+
+.underMiddleSection{
+    background-color: #ebebeb;
+    font-family: Montserrat Regular;
+    height: 290px;
+}
+
+.underMiddleSection .sign{
+    width: 33.33333333%;
+    float: left;
+    height: 100%;
+    display: flex;
+    background-color: #5b0fa1;
+    align-items: center;
+    justify-content: center;
+}
+
+.underMiddleSection p a{
+    margin: 0;
+    font-family: Quicksand;
+    font-size: 40pt;
+    font-weight: normal;
+}
+
+.underMiddleSection img{
+    margin: 0;
+    width: 33.33333333%;
+    float: left;
+    height: 100%;
+}
+
+
+.lowerSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.lowerSection .container {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 100%;
+}
+
+h2{
+    margin: 0;
+    color: rgb(8,140,165);
+    font-size: 30pt;
+    font-family: Montserrat Regular;
+    font-weight: normal;
+}
+
+.lorem{
+    font-family: Montserrat Regular;
+    font-size: 14pt;
+    font-weight: normal;
+    color: rgb(81,81,81);
+    height: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.first, .second{
+    width: 45%;
+    line-height: 2em;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1400px) {
+    .underMiddleSection{
+        height: 400px;
+    }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1200px){
+    .topSection {
+        height: 546px;
+    }
+    .middleSection{
+        height: 224px;
+    }
+
+    .leftMiddle{
+        height: 224px;
+    }
+
+    .rightMiddle{
+        height: 224px;
+    }
+
+    .underMiddleSection {
+        height: 280px;
+    }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 800px){
+    header{
+        height: 72px;
+    }
+
+    .topSection {
+        height: 350px;
+    }
+    .middleSection{
+        height: 150px;
+    }
+
+    .rightMiddle{
+        height: 150px;
+    }
+
+    .leftMiddle{
+        height: 150px;
+    }
+
+    .underMiddleSection {
+        height: 1655px;
+
+    }
+
+    .topSection h1{
+        font-size: 30pt;
+    }
+
+    .topSection p{
+        font-size: 15pt;
+    }
+
+    .underMiddleSection div{
+        width: 100%;
+        float: left;
+        height: 33.33333333%;
+    }
+
+    .underMiddleSection img{
+        width: 100%;
+       // flex-direction: row;
+        height: 33.33333333%;
+    }
+
+    .second p{
+        display: none;
+    }
+
+    .rightMiddle a{
+        font-size: 20pt;
+    }
+
+    .leftMiddle{
+
+        font-size: 15pt;
+    }
+
+    .underMiddleSection p a{
+        font-size: 60pt;
+    }
+
+    .first{
+        width: 95%;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    .lowerSection .container{
+        padding: 30px;
+    }
+
+    h2{
+        font-size: 30pt;
+    }
+
+    .lorem{
+        font-size: 22pt;
+    }
+
+    .navigation{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-device-width: 0px) and (max-device-width: 400px){
+
+    header{
+        height: 40px;
+    }
+
+    .topSection {
+        height: 180px;
+    }
+    .middleSection{
+        height: 80px;
+    }
+
+    .rightMiddle{
+        height: 80px;
+    }
+
+    .leftMiddle{
+        height: 80px;
+    }
+
+    .underMiddleSection{
+        height: 830px;
+    }
+    .topSection .container {
+        padding-top: 20px;
+        width: 78%;
+    }
+
+    .top_section h1{
+        font-size: 15pt;
+    }
+
+    .top_section p{
+        font-size: 8pt;
+    }
+
+    .underMiddleSection div{
+        width: 100%;
+        float: left;
+        height: 33.33333333%;
+    }
+
+    .underMiddleSection img{
+        width: 100%;
+        flex-direction: row;
+        height: 33.33333333%;
+    }
+
+    .second p{
+        display: none;
+    }
+
+    .rightMiddle a{
+        font-size: 10pt;
+    }
+
+    .leftMiddle{
+
+        font-size: 8pt;
+    }
+
+    .underMiddleSection p a{
+        font-size: 30pt;
+    }
+
+    .first{
+        width: 95%;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    .lowerSection .container{
+        padding: 20px;
+    }
+
+    .navigation{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navigation p{
+        font-size: 10pt;
+    }
+
+    h2{
+        font-size: 19pt;
+    }
+
+    .lorem{
+        font-size: 13.5pt;
+    }
+}
+
+
+
+
